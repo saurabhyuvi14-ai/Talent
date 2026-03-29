@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About | Talent Coaching</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/style.css">
+  </head>
+  <body>
+    <div id="app">
+      <!-- Navigation -->
+      <nav id="main-nav" class="sticky-header">
+        <div class="container-full nav-content">
+          <div class="logo-container">
+            <div class="logo-placeholder"></div>
+            <a href="index.html" class="logo">
+              <span class="logo-accent">Talent</span> Coaching
+            </a>
+          </div>
+          <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html" class="active">About</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="results.html">Result</a></li>
+            <li><a href="fees.html">Fees</a></li>
+            <li><a href="index.html#contact" class="btn-red">Contact Now</a></li>
+          </ul>
+          <button id="mobile-menu-toggle" aria-label="Toggle Menu">
+            <i data-lucide="menu"></i>
+          </button>
+        </div>
+      </nav>
+
+      <!-- Main About Content Starts Directly -->
+      <section class="section pt-40 pb-20">
+        <div class="container-full">
+          <!-- Principal Introduction Side-by-Side -->
+          <div class="flex flex-col md:flex-row items-center justify-between text-left mb-24">
+            <div class="flex-grow pr-16" data-aos="fade-right">
+              <h2 class="text-5xl font-extrabold mb-10 text-secondary">A Legacy of Educational Success</h2>
+              <!-- <p class="text-2xl leading-relaxed text-gray-700">Thousands of students have embarked on their journey towards prestigious schools. Our principal's vision of quality and accessible education continues to guide our mission every single day.</p> -->
+            </div>
+            <div class="principal-container md:ml-auto" data-aos="fade-left">
+               <div class="principal-img-box w-80 h-[450px]"> <!-- Slightly bigger as requested -->
+                 <img src="/principal.png" alt="Principal" class="object-cover w-full h-full">
+               </div>
+               <span class="principal-label text-3xl">Principal</span>
+            </div>
+          </div>
+
+          <!-- Single Box Why Choose -->
+          <div class="mb-24">
+             <div class="section-header align-center mb-12">
+               <h2 class="section-title">Why Choose Talent Coaching Center</h2>
+             </div>
+             <div class="card p-20 shadow-2xl rounded-3xl bg-white border border-gray-100" data-aos="zoom-in">
+                <div class="feature-list-single flex-wrap justify-center flex gap-12">
+                   <div class="feature-tag text-2xl px-10 py-6"><i data-lucide="target" class="w-8 h-8 text-primary"></i> Exam-oriented preparation</div>
+                   <div class="feature-tag text-2xl px-10 py-6"><i data-lucide="users" class="w-8 h-8 text-primary"></i> Personal attention</div>
+                   <div class="feature-tag text-2xl px-10 py-6"><i data-lucide="file-text" class="w-8 h-8 text-primary"></i> Regular test practice</div>
+                   <div class="feature-tag text-2xl px-10 py-6"><i data-lucide="graduation-cap" class="w-8 h-8 text-primary"></i> Teacher support</div>
+                   <div class="feature-tag text-2xl px-10 py-6 bg-purple-50 text-purple-900 shadow-none"><i data-lucide="check-circle-2" class="w-8 h-8 text-purple-600"></i> Supportive environment for both girls and boys</div>
+                </div>
+             </div>
+          </div>
+
+          <!-- Detailed Facilities Section -->
+          <div class="section-header align-center mb-20">
+             <h2 class="section-title">Our Facilities</h2>
+          </div>
+          <div class="cards-grid-full gap-12">
+            <!-- Updated Facilities with Detailed Format -->
+            <div class="card p-12 shadow-xl rounded-3xl group transition-all hover:bg-light" data-aos="fade-up">
+              <div class="flex items-start gap-8">
+                 <div class="w-20 h-20 bg-blue-50 text-primary flex items-center justify-center rounded-2xl flex-shrink-0"><i data-lucide="book-open" class="w-10 h-10"></i></div>
+                 <div>
+                    <h3 class="text-3xl font-extrabold mb-4">Complete Study Package</h3>
+                    <p class="text-xl text-gray-600 leading-relaxed">We provide full study material including specialized textbooks and dedicated practice copies for every student to ensure a comprehensive learning experience.</p>
+                 </div>
+              </div>
+            </div>
+
+            <!-- Weekly Exam Highlight -->
+            <div class="card p-12 shadow-xl rounded-3xl weekly-exam-highlight" data-aos="fade-up" data-aos-delay="100">
+              <div class="flex items-start gap-8">
+                 <div class="w-20 h-20 bg-white text-primary flex items-center justify-center rounded-2xl flex-shrink-0"><i data-lucide="calendar" class="w-10 h-10"></i></div>
+                 <div>
+                    <h3 class="text-3xl font-extrabold mb-4 text-white">Weekly Exams Focus</h3>
+                    <p class="text-xl font-bold text-white leading-relaxed italics">Weekly exams are conducted regularly under strict supervision to track and improve student performance continuously.</p>
+                 </div>
+              </div>
+            </div>
+
+            <div class="card p-12 shadow-xl rounded-3xl group transition-all hover:bg-light" data-aos="fade-up" data-aos-delay="200">
+               <div class="flex items-start gap-8">
+                  <div class="w-20 h-20 bg-green-50 text-green-600 flex items-center justify-center rounded-2xl flex-shrink-0"><i data-lucide="heart-handshake" class="w-10 h-10"></i></div>
+                  <div>
+                     <h3 class="text-3xl font-extrabold mb-4">Dedicated Teacher Support</h3>
+                     <p class="text-xl text-gray-600 leading-relaxed">Our teachers personally help students according to their needs, spending required time to ensure every doubt is resolved and every child is supported.</p>
+                  </div>
+               </div>
+            </div>
+
+            <div class="card p-12 shadow-xl rounded-3xl group transition-all hover:bg-light" data-aos="fade-up" data-aos-delay="300">
+               <div class="flex items-start gap-8">
+                  <div class="w-20 h-20 bg-yellow-50 text-yellow-600 flex items-center justify-center rounded-2xl flex-shrink-0"><i data-lucide="clipboard" class="w-10 h-10"></i></div>
+                  <div>
+                     <h3 class="text-3xl font-extrabold mb-4">Intensive Practice Labs</h3>
+                     <p class="text-xl text-gray-600 leading-relaxed">Regular mock tests and rigorous mental ability practice sessions according to student specific requirements for AISSEE and JNVST.</p>
+                  </div>
+               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer class="footer">
+        <div class="container-full">
+          <div class="footer-grid">
+            <div class="footer-info">
+              <div class="logo white mb-4 text-white font-extrabold text-2xl"><span class="logo-accent text-primary">Talent</span> Coaching</div>
+            </div>
+          </div>
+          <div class="footer-bottom">
+            <p>&copy; 2024 Talent Coaching. All Rights Reserved.</p>
+          </div>
+        </div>
+      </footer>
+
+      <!-- Floating Buttons -->
+      <div class="floating-actions">
+        <a href="tel:+918709313498" class="action-btn-float btn-call-float" aria-label="Call Us">
+          <i data-lucide="phone" class="w-8 h-8"></i>
+        </a>
+        <a href="https://wa.me/918709313498" class="action-btn-float btn-whatsapp-float" target="_blank" aria-label="Chat on WhatsApp">
+          <i data-lucide="message-circle" class="w-8 h-8"></i>
+        </a>
+      </div>
+    </div>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>

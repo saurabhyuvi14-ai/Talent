@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fees | Talent Coaching</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/style.css">
+  </head>
+  <body>
+    <div id="app">
+      <!-- Navigation -->
+      <nav id="main-nav" class="sticky-header">
+        <div class="container-full nav-content">
+          <div class="logo-container">
+            <div class="logo-placeholder"></div>
+            <a href="index.html" class="logo">
+              <span class="logo-accent">Talent</span> Coaching
+            </a>
+          </div>
+          <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="results.html">Result</a></li>
+            <li><a href="fees.html" class="active">Fees</a></li>
+            <li><a href="index.html#contact" class="btn-red">Contact Now</a></li>
+          </ul>
+          <button id="mobile-menu-toggle" aria-label="Toggle Menu">
+            <i data-lucide="menu"></i>
+          </button>
+        </div>
+      </nav>
+
+      <!-- Page Header -->
+      <section class="section bg-secondary text-white pt-40 pb-20">
+        <div class="container-full align-center">
+          <h1 class="text-4xl md:text-5xl font-extrabold mb-4" data-aos="fade-up">Affordable Fee Structure</h1>
+          <p class="section-subtitle text-white opacity-80" data-aos="fade-up" data-aos-delay="100">Quality education at the most competitive fees for every student.</p>
+        </div>
+      </section>
+
+      <!-- Fees Section -->
+      <section class="section">
+        <div class="container-full">
+          <div class="fee-card shadow-2xl p-8 md:p-16 bg-white rounded-3xl" data-aos="fade-up">
+            <h2 class="text-3xl font-extrabold mb-12">Fee Overview & Grade Details</h2>
+            <div class="table-container shadow-sm border rounded-2xl overflow-hidden">
+               <table class="w-full text-left">
+                 <thead>
+                   <tr class="bg-gray-100">
+                     <th class="p-6 md:p-10 text-xl md:text-2xl text-left border-b-2 border-gray-200">Course / Grade</th>
+                     <th class="p-6 md:p-10 text-xl md:text-2xl text-left border-b-2 border-gray-200">Admission Fee</th>
+                     <th class="p-6 md:p-10 text-xl md:text-2xl text-left border-b-2 border-gray-200">Monthly Fee</th>
+                   </tr>
+                 </thead>
+                 <tbody class="text-lg md:text-xl">
+                   <tr class="hover:bg-slate-50 transition-colors">
+                     <td class="p-6 md:p-10 border-b font-bold">Class 1-3</td>
+                     <td class="p-6 md:p-10 border-b text-primary font-extrabold text-2xl md:text-3xl">₹1000</td>
+                     <td class="p-6 md:p-10 border-b text-primary font-extrabold text-2xl md:text-3xl">₹800</td>
+                   </tr>
+                   <tr class="hover:bg-slate-50 transition-colors">
+                     <td class="p-6 md:p-10 border-b font-bold">Class 4-5</td>
+                     <td class="p-6 md:p-10 border-b text-primary font-extrabold text-2xl md:text-3xl">₹1500</td>
+                     <td class="p-6 md:p-10 border-b text-primary font-extrabold text-2xl md:text-3xl">₹1200</td>
+                   </tr>
+                   <tr class="hover:bg-slate-50 transition-colors">
+                     <td class="p-6 md:p-10 border-b font-bold">Express Batch (6-9)</td>
+                     <td class="p-6 md:p-10 border-b text-primary font-extrabold text-2xl md:text-3xl">₹2000</td>
+                     <td class="p-6 md:p-10 border-b text-primary font-extrabold text-2xl md:text-3xl">₹1500</td>
+                   </tr>
+                 </tbody>
+               </table>
+            </div>
+            <div class="mt-12 p-8 bg-red-50 rounded-2xl border-l-8 border-primary">
+              <p class="text-lg md:text-xl font-semibold text-gray-700">Note: All essential books and customized study materials are included in the Admission fee for all levels. There are no hidden or extra charges for weekly/monthly mock test evaluations.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer class="footer">
+        <div class="container-full">
+          <div class="footer-grid">
+            <div class="footer-info">
+              <div class="logo white mb-4 text-white font-extrabold text-2xl"><span class="logo-accent text-primary">Talent</span> Coaching</div>
+            </div>
+          </div>
+          <div class="footer-bottom">
+            <p>&copy; 2024 Talent Coaching. All Rights Reserved.</p>
+          </div>
+        </div>
+      </footer>
+
+      <!-- Floating Buttons -->
+      <div class="floating-actions">
+        <a href="tel:+918709313498" class="action-btn-float btn-call-float" aria-label="Call Us">
+          <i data-lucide="phone" class="w-8 h-8"></i>
+        </a>
+        <a href="https://wa.me/918709313498" class="action-btn-float btn-whatsapp-float" target="_blank" aria-label="Chat on WhatsApp">
+          <i data-lucide="message-circle" class="w-8 h-8"></i>
+        </a>
+      </div>
+    </div>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>

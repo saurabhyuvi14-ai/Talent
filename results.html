@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Results | Talent Coaching</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/style.css">
+  </head>
+  <body>
+    <div id="app">
+      <!-- Navigation -->
+      <nav id="main-nav" class="sticky-header">
+        <div class="container-full nav-content">
+          <div class="logo-container">
+            <div class="logo-placeholder"></div>
+            <a href="index.html" class="logo">
+              <span class="logo-accent">Talent</span> Coaching
+            </a>
+          </div>
+          <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="results.html" class="active">Result</a></li>
+            <li><a href="fees.html">Fees</a></li>
+            <li><a href="index.html#contact" class="btn-red">Contact Now</a></li>
+          </ul>
+          <button id="mobile-menu-toggle" aria-label="Toggle Menu">
+            <i data-lucide="menu"></i>
+          </button>
+        </div>
+      </nav>
+
+      <!-- Page Header -->
+      <section class="section bg-secondary text-white pt-40 pb-24">
+        <div class="container-full align-center">
+          <h1 class="text-5xl md:text-6xl font-extrabold mb-6" data-aos="fade-up">Top Academic Results</h1>
+          <p class="section-subtitle text-white opacity-80 text-xl" data-aos="fade-up" data-aos-delay="100">Proven track record of excellence in national level entrance exams.</p>
+        </div>
+      </section>
+
+      <!-- Overall Performance Summary (Highlighted Section) -->
+      <section class="section pt-16 pb-12 bg-light">
+        <div class="container-full">
+           <div class="section-header align-center mb-12">
+              <h2 class="section-title">Performance Summary</h2>
+           </div>
+           <div class="results-summary-grid">
+              <div class="summary-card border-primary" data-aos="zoom-in">
+                 <span class="summary-number text-primary">95%</span>
+                 <span class="summary-label">Overall Success Rate</span>
+              </div>
+              <div class="summary-card border-secondary" data-aos="zoom-in" data-aos-delay="100">
+                 <span class="summary-number text-secondary">500+</span>
+                 <span class="summary-label">Total Students Joined</span>
+              </div>
+              <div class="summary-card border-accent" data-aos="zoom-in" data-aos-delay="200">
+                 <span class="summary-number text-accent">450+</span>
+                 <span class="summary-label">Appeared in Exam</span>
+              </div>
+              <div class="summary-card border-green-600" data-aos="zoom-in" data-aos-delay="300" style="border-bottom-color: #16a34a;">
+                 <span class="summary-number" style="color: #16a34a;">425+</span>
+                 <span class="summary-label">Successfully Cleared</span>
+              </div>
+           </div>
+        </div>
+      </section>
+
+      <!-- Institute-wise Results (Bigger/Clearer Cards) -->
+      <section class="section pt-20">
+        <div class="container-full">
+          
+          <!-- 1. Sainik School -->
+          <div class="result-institute-card border-l-8 border-primary rounded-[40px] p-12 md:p-20 mb-24 shadow-2xl bg-white" data-aos="fade-up">
+             <div class="result-card-layout">
+                <div class="result-image-small h-[350px]">
+                   <img src="/Girls.webp" alt="Sainik School Results" class="animate-float-left">
+                </div>
+                <div class="result-details-highlighted">
+                   <h2 class="text-5xl font-extrabold mb-10 text-primary uppercase tracking-tighter">Sainik School</h2>
+                   <div class="table-container shadow-md border rounded-[30px] overflow-hidden">
+                      <table class="w-full text-left">
+                        <thead class="bg-primary text-white">
+                          <tr>
+                            <th class="p-8 text-xl">Batch Year</th>
+                            <th class="p-8 text-xl">Students Appeared</th>
+                            <th class="p-8 text-xl">Students Cleared</th>
+                            <th class="p-8 text-xl">Success Rate</th>
+                          </tr>
+                        </thead>
+                        <tbody class="text-xl">
+                          <tr class="border-b hover:bg-slate-50">
+                            <td class="p-8 font-bold">2024</td>
+                            <td class="p-8">30</td>
+                            <td class="p-8 font-bold text-green-600">18</td>
+                            <td class="p-8 font-extrabold">60%</td>
+                          </tr>
+                          <tr class="hover:bg-slate-50">
+                             <td class="p-8 font-bold">2023</td>
+                             <td class="p-6 md:p-8">25</td>
+                             <td class="p-6 md:p-8 font-bold text-green-600">15</td>
+                             <td class="p-6 md:p-8 font-extrabold">60%</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                   </div>
+                </div>
+             </div>
+          </div>
+
+          <!-- 2. Netarhat -->
+          <div class="result-institute-card border-l-8 border-secondary rounded-[40px] p-12 md:p-20 mb-24 shadow-2xl bg-white" data-aos="fade-up">
+            <div class="result-card-layout">
+               <div class="result-image-small h-[350px]">
+                 <img src="/Netarhat.webp" alt="Netarhat Results" class="animate-float-left" style="animation-delay: 1.5s;">
+               </div>
+               <div class="result-details-highlighted">
+                  <h2 class="text-5xl font-extrabold mb-10 text-secondary uppercase tracking-tighter">Netarhat School</h2>
+                  <div class="table-container shadow-md border rounded-[30px] overflow-hidden">
+                     <table class="w-full text-left">
+                       <thead class="bg-secondary text-white">
+                         <tr>
+                           <th class="p-8 text-xl">Batch Year</th>
+                           <th class="p-8 text-xl">Students Appeared</th>
+                           <th class="p-8 text-xl">Students Cleared</th>
+                           <th class="p-8 text-xl">Success Rate</th>
+                         </tr>
+                       </thead>
+                       <tbody class="text-xl">
+                         <tr class="border-b hover:bg-slate-50">
+                           <td class="p-8 font-bold">2024</td>
+                           <td class="p-8">35</td>
+                           <td class="p-8 font-bold text-blue-600">20</td>
+                           <td class="p-8 font-extrabold">57%</td>
+                         </tr>
+                         <tr class="hover:bg-slate-50">
+                            <td class="p-8 font-bold">2023</td>
+                            <td class="p-8">30</td>
+                            <td class="p-8 font-bold text-blue-600">18</td>
+                            <td class="p-8 font-extrabold">60%</td>
+                         </tr>
+                       </tbody>
+                     </table>
+                  </div>
+               </div>
+            </div>
+         </div>
+
+         <!-- 3. Jawahar / Navodaya -->
+         <div class="result-institute-card border-l-8 border-yellow-600 rounded-[40px] p-12 md:p-20 mb-24 shadow-2xl bg-white" data-aos="fade-up">
+            <div class="result-card-layout">
+               <div class="result-image-small h-[350px]">
+                 <img src="/jawahar-navodaya-vidyalaya-dudhimati-koderma-schools-psp1rqh406.avif" alt="Navodaya Results" class="animate-float-left" style="animation-delay: 3s;">
+               </div>
+               <div class="result-details-highlighted">
+                  <h2 class="text-5xl font-extrabold mb-10 text-yellow-700 uppercase tracking-tighter">Navodaya Vidyalaya</h2>
+                  <div class="table-container shadow-md border rounded-[30px] overflow-hidden">
+                     <table class="w-full text-left">
+                       <thead class="bg-yellow-600 text-white">
+                         <tr>
+                           <th class="p-8 text-xl">Batch Year</th>
+                           <th class="p-8 text-xl">Students Appeared</th>
+                           <th class="p-8 text-xl">Students Cleared</th>
+                           <th class="p-8 text-xl">Success Rate</th>
+                         </tr>
+                       </thead>
+                       <tbody class="text-xl">
+                         <tr class="border-b hover:bg-slate-50">
+                           <td class="p-8 font-bold">2024</td>
+                           <td class="p-8">110</td>
+                           <td class="p-8 font-bold text-yellow-700">65</td>
+                           <td class="p-8 font-extrabold">59%</td>
+                         </tr>
+                         <tr class="hover:bg-slate-50">
+                            <td class="p-8 font-bold">2023</td>
+                            <td class="p-8">100</td>
+                            <td class="p-8 font-bold text-yellow-700">59</td>
+                            <td class="p-8 font-extrabold">59%</td>
+                         </tr>
+                       </tbody>
+                     </table>
+                  </div>
+               </div>
+            </div>
+         </div>
+
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer class="footer">
+        <div class="container-full">
+          <div class="footer-grid">
+            <div class="footer-info">
+              <div class="logo white mb-4 text-white font-extrabold text-2xl"><span class="logo-accent text-primary">Talent</span> Coaching</div>
+            </div>
+          </div>
+          <div class="footer-bottom mt-12 pt-8 border-t border-white/10 text-center text-gray-500">
+            <p>&copy; 2024 Talent Coaching. All Rights Reserved.</p>
+          </div>
+        </div>
+      </footer>
+      
+      <!-- Floating Buttons -->
+      <div class="floating-actions">
+        <a href="tel:+918709313498" class="action-btn-float btn-call-float shadow-2xl" aria-label="Call Us">
+          <i data-lucide="phone" class="w-10 h-10"></i>
+        </a>
+        <a href="https://wa.me/918709313498" class="action-btn-float btn-whatsapp-float shadow-2xl" target="_blank" aria-label="Chat on WhatsApp">
+          <i data-lucide="message-circle" class="w-10 h-10"></i>
+        </a>
+      </div>
+
+    </div>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>

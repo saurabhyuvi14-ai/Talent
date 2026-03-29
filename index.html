@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Talent Coaching | Prep for Sainik, Navodaya & Netarhat</title>
+    <meta name="description" content="Talent Coaching provides expert preparation for Sainik School, Navodaya, and Netarhat entrance exams for Class 1-5 students in Hindi and English medium.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/style.css">
+  </head>
+  <body>
+    <div id="app">
+      <!-- Cursor Follower -->
+      <div id="cursor-follower" class="hidden md:block"></div>
+
+      <!-- Navigation -->
+      <nav id="main-nav" class="sticky-header">
+        <div class="container-full nav-content">
+          <div class="logo-container">
+            <div class="logo-placeholder"></div>
+            <a href="index.html" class="logo">
+              <span class="logo-accent">Talent</span> Coaching
+            </a>
+          </div>
+          <ul class="nav-links">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="results.html">Result</a></li>
+            <li><a href="fees.html">Fees</a></li>
+            <li><a href="#contact" class="btn-red">Contact Now</a></li>
+          </ul>
+          <button id="mobile-menu-toggle" aria-label="Toggle Menu">
+            <i data-lucide="menu"></i>
+          </button>
+        </div>
+      </nav>
+
+      <!-- Hero Section (Mobile Optimized Background) -->
+      <section id="home" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="container-full hero-container">
+          <div class="hero-content-bottom-left" data-aos="fade-up">
+            <h1 class="hero-title-main">Talent Coaching</h1>
+            <p class="hero-location-line">Near Sainik School, Tilaiya, Koderma</p>
+            <p class="hero-tagline-main">Expert Preparation for Sainik School, Navodaya, and Netarhat Entrance Exams for Class 6th and 9th</p>
+            <div class="hero-btns-left">
+              <a href="#contact" class="btn btn-primary">Contact Now</a>
+              <a href="https://wa.me/918709313498" target="_blank" class="btn btn-whatsapp">
+                <i data-lucide="message-circle"></i> Chat on WhatsApp
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Exams Section (Full Width, Larger Cards) -->
+      <section id="exams" class="section">
+        <div class="container-full">
+          <div class="section-header align-center mb-16">
+            <h2 class="section-title">Exams We Prepare For</h2>
+            <p class="section-subtitle">Dedicated training for the most prestigious entrance exams across India.</p>
+          </div>
+          <div class="cards-grid-full">
+            <div class="card card-expanded group" data-aos="zoom-in-up">
+              <div class="mb-8 overflow-hidden rounded-2xl h-64 md:h-72">
+                 <img src="/Sainik.png" alt="Sainik School" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+              </div>
+              <div class="card-icon blue w-16 h-16 mb-6"><i data-lucide="shield-check" class="w-8 h-8"></i></div>
+              <h3 class="text-3xl mb-4 font-bold">Sainik School</h3>
+              <p class="text-lg text-gray-600">Rigorous preparation for All India Sainik Schools Entrance Examination (AISSEE), focusing on Mathematics, G.K, and Intelligence.</p>
+            </div>
+            
+            <div class="card card-expanded group" data-aos="zoom-in-up" data-aos-delay="100">
+              <div class="mb-8 overflow-hidden rounded-2xl h-64 md:h-72">
+                 <img src="/Netarhat.webp" alt="Netarhat School" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+              </div>
+              <div class="card-icon red w-16 h-16 mb-6"><i data-lucide="award" class="w-8 h-8"></i></div>
+              <h3 class="text-3xl mb-4 font-bold">Netarhat</h3>
+              <p class="text-lg text-gray-600">Tailored guidance for the prestigious Netarhat Residential School entrance with extensive practice on previous year patterns.</p>
+            </div>
+
+            <div class="card card-expanded group" data-aos="zoom-in-up" data-aos-delay="200">
+              <div class="mb-8 overflow-hidden rounded-2xl h-64 md:h-72">
+                 <img src="/jawahar-navodaya-vidyalaya-dudhimati-koderma-schools-psp1rqh406.avif" alt="Navodaya School" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+              </div>
+              <div class="card-icon gold w-16 h-16 mb-6"><i data-lucide="graduation-cap" class="w-8 h-8"></i></div>
+              <h3 class="text-3xl mb-4 font-bold">Navodaya</h3>
+              <p class="text-lg text-gray-600">Expert coaching for JNVST entrance exams, ensuring every child masters mental ability and arithmetic concepts.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Who Can Join Us Section (Mobile Optimized) -->
+      <section id="join" class="section bg-light">
+        <div class="container-full">
+          <div class="grid-2 gap-20 items-center">
+            <div data-aos="fade-right">
+              <h2 class="section-title mb-8">Who Can Join Us?</h2>
+              <ul class="check-list">
+                <li class="text-xl mb-6"><i data-lucide="check-circle" class="text-primary text-3xl"></i> Preparing students for Class 6th and Class 9th entrance exams</li>
+                <li class="text-xl mb-6"><i data-lucide="check-circle" class="text-primary text-3xl"></i> Hindi Medium Preparation</li>
+                <li class="text-xl mb-6"><i data-lucide="check-circle" class="text-primary text-3xl"></i> English Medium Preparation</li>
+                <li class="text-2xl mt-6 font-extrabold text-secondary border-l-4 border-primary pl-6 py-2">
+                   Boys and Girls both can join for entrance exam preparation.
+                </li>
+              </ul>
+              <div class="mt-12 flex flex-col md:flex-row gap-6">
+                 <a href="#contact" class="btn btn-primary text-xl px-12 py-5">Inquire Now</a>
+              </div>
+            </div>
+            
+            <div class="dual-image-container" data-aos="fade-left">
+               <div class="dual-image-box">
+                  <img src="/Girls.webp" alt="Inclusive Education">
+               </div>
+               <div class="dual-image-box">
+                  <img src="/students.jpg" alt="Student Progress">
+               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Section (Mobile Refined) -->
+      <section id="contact" class="section">
+        <div class="container-full">
+          <div class="section-header align-center mb-16">
+            <h2 class="section-title">Contact Us Now</h2>
+            <p class="section-subtitle">Help your child achieve their academic goals today.</p>
+          </div>
+          <div class="grid-2 gap-16">
+            <div class="card p-12 bg-white shadow-xl rounded-3xl" data-aos="fade-right">
+               <h3 class="text-3xl font-bold mb-10">Get In Touch</h3>
+               <div class="contact-methods">
+                  <div class="flex items-start gap-8 mb-12">
+                     <div class="w-16 h-16 bg-blue-50 text-primary flex items-center justify-center rounded-2xl flex-shrink-0"><i data-lucide="phone" class="w-8 h-8"></i></div>
+                     <div>
+                        <h4 class="text-lg font-bold text-gray-400 mb-1">Call Us Direct</h4>
+                        <p class="text-3xl font-bold text-secondary tracking-tight"><a href="tel:+918709313498">8709313498</a></p>
+                     </div>
+                  </div>
+                  <div class="flex items-start gap-8 mb-12">
+                     <div class="w-16 h-16 bg-red-50 text-red-600 flex items-center justify-center rounded-2xl flex-shrink-0"><i data-lucide="map-pin" class="w-8 h-8"></i></div>
+                     <div>
+                        <h4 class="text-lg font-bold text-gray-400 mb-1">Our Location</h4>
+                        <p class="text-xl font-semibold text-secondary">Near Sainik School, Tilaiya, Koderma, Jharkhand</p>
+                     </div>
+                  </div>
+                  <div class="flex items-start gap-8">
+                     <div class="w-16 h-16 bg-green-50 text-green-600 flex items-center justify-center rounded-2xl flex-shrink-0"><i data-lucide="message-circle" class="w-8 h-8"></i></div>
+                     <div>
+                        <h4 class="text-lg font-bold text-gray-400 mb-1">WhatsApp Chat</h4>
+                        <p class="text-xl font-semibold text-green-600"><a href="https://wa.me/918709313498">Click to start chatting</a></p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            
+            <!-- Polished Form -->
+            <div class="inquiry-form-card" data-aos="fade-left">
+              <h3 class="text-3xl font-bold mb-10">Send an Inquiry</h3>
+              <form id="inquiry-form">
+                <div class="form-group">
+                  <label class="form-label">Full Name</label>
+                  <input type="text" class="form-input" placeholder="Enter parent or student name" required>
+                </div>
+                <div class="form-group">
+                  <label class="form-label">Mobile Number</label>
+                  <input type="tel" class="form-input" placeholder="Enter mobile number" required>
+                </div>
+                <div class="form-group">
+                  <label class="form-label">Message Details</label>
+                  <textarea rows="5" class="form-input" placeholder="Tell us about the student's current class and school..."></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary w-full py-6 rounded-2xl text-xl font-extrabold shadow-lg">Submit Request</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer (Premium Mobile Look) -->
+      <footer class="footer">
+        <div class="container-full">
+          <div class="footer-grid">
+            <div class="footer-info">
+              <div class="logo white mb-8 text-white font-extrabold text-3xl"><span class="logo-accent text-primary">Talent</span> Coaching</div>
+              <p class="text-gray-400 text-lg leading-relaxed">Dedicated to excellence since inception, providing top-tier entrance exam preparation in Tilaiya, Koderma.</p>
+            </div>
+            <div class="footer-links">
+               <h4 class="text-white mb-6 font-bold text-xl">Quick Access</h4>
+               <ul class="space-y-4">
+                  <li><a href="about.html" class="text-gray-400 hover:text-white transition-colors">About Institute</a></li>
+                  <li><a href="results.html" class="text-gray-400 hover:text-white transition-colors">Our Results</a></li>
+                  <li><a href="gallery.html" class="text-gray-400 hover:text-white transition-colors">Campus Tour</a></li>
+                  <li><a href="fees.html" class="text-gray-400 hover:text-white transition-colors">Fee Details</a></li>
+               </ul>
+            </div>
+          </div>
+          <div class="footer-bottom mt-20 pt-10 border-t border-white/10 text-center text-gray-500 text-lg">
+            <p>&copy; 2024 Talent Coaching Center. All Rights Reserved.</p>
+          </div>
+        </div>
+      </footer>
+
+      <!-- Floating Buttons (Larger for Mobile) -->
+      <div class="floating-actions">
+        <a href="tel:+918709313498" class="action-btn-float btn-call-float shadow-2xl" aria-label="Call Us">
+          <i data-lucide="phone" class="w-10 h-10"></i>
+        </a>
+        <a href="https://wa.me/918709313498" class="action-btn-float btn-whatsapp-float shadow-2xl" target="_blank" aria-label="Chat on WhatsApp">
+          <i data-lucide="message-circle" class="w-10 h-10"></i>
+        </a>
+      </div>
+      
+    </div>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>

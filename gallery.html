@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gallery | Talent Coaching</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/style.css">
+  </head>
+  <body>
+    <div id="app">
+      <!-- Navigation -->
+      <nav id="main-nav" class="sticky-header">
+        <div class="container-full nav-content">
+          <div class="logo-container">
+            <div class="logo-placeholder"></div>
+            <a href="index.html" class="logo">
+              <span class="logo-accent">Talent</span> Coaching
+            </a>
+          </div>
+          <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="gallery.html" class="active">Gallery</a></li>
+            <li><a href="results.html">Result</a></li>
+            <li><a href="fees.html">Fees</a></li>
+            <li><a href="index.html#contact" class="btn-red">Contact Now</a></li>
+          </ul>
+          <button id="mobile-menu-toggle" aria-label="Toggle Menu">
+            <i data-lucide="menu"></i>
+          </button>
+        </div>
+      </nav>
+
+      <!-- Main Coaching Image (Top Gallery Header) -->
+      <section class="section pt-32 pb-16">
+        <div class="container-full align-center">
+          <div class="max-w-3xl mx-auto rounded-[30px] overflow-hidden shadow-2xl relative group border-8 border-white">
+             <!-- Top Coaching Image (Slightly Smaller for prominence) -->
+             <img src="/Gemini_Generated_Image_sr10nvsr10nvsr10.png" alt="Talent Coaching Center" class="w-full h-[360px] object-cover transition-transform duration-700 group-hover:scale-105">
+             <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent flex items-end p-10">
+                <div class="text-left">
+                  <span class="inline-block bg-primary text-white px-4 py-1 rounded-full text-xs font-bold uppercase mb-4">Our Main Campus</span>
+                  <h1 class="text-3xl md:text-4xl font-extrabold text-white">Talent Coaching Center</h1>
+                </div>
+             </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Campus View Categories -->
+      <section class="section bg-light">
+        <div class="container-full">
+          <div class="section-header align-center mb-16">
+            <h2 class="section-title">Campus View Gallery</h2>
+          </div>
+          
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+             <!-- Interactive Floating Placeholders -->
+             <div class="text-center group" data-aos="fade-up">
+                <div class="rounded-3xl shadow-xl h-72 bg-white flex items-center justify-center text-primary font-bold uppercase tracking-widest border border-slate-100 mb-6 animate-float-left overflow-hidden">
+                   <div class="w-full h-full flex items-center justify-center bg-slate-50">Classroom</div>
+                </div>
+                <h4 class="gallery-label-box text-center">Classroom</h4>
+             </div>
+             
+             <div class="text-center group" data-aos="fade-up" data-aos-delay="100">
+                <div class="rounded-3xl shadow-xl h-72 bg-white flex items-center justify-center text-primary font-bold uppercase tracking-widest border border-slate-100 mb-6 animate-float-left overflow-hidden" style="animation-delay: 1s;">
+                   <div class="w-full h-full flex items-center justify-center bg-blue-50">Study Room</div>
+                </div>
+                <h4 class="gallery-label-box text-center">Study Room</h4>
+             </div>
+
+             <div class="text-center group" data-aos="fade-up" data-aos-delay="200">
+                <div class="rounded-3xl shadow-xl h-72 bg-white flex items-center justify-center text-primary font-bold uppercase tracking-widest border border-slate-100 mb-6 animate-float-left overflow-hidden" style="animation-delay: 2s;">
+                   <div class="w-full h-full flex items-center justify-center bg-green-50">Campus Exterior</div>
+                </div>
+                <h4 class="gallery-label-box text-center">Campus View</h4>
+             </div>
+
+             <div class="text-center group" data-aos="fade-up" data-aos-delay="300">
+                <div class="rounded-3xl shadow-xl h-72 bg-white flex items-center justify-center text-primary font-bold uppercase tracking-widest border border-slate-100 mb-6 animate-float-left overflow-hidden" style="animation-delay: 3s;">
+                   <div class="w-full h-full flex items-center justify-center bg-yellow-50">Study Group</div>
+                </div>
+                <h4 class="gallery-label-box text-center">Study Group</h4>
+             </div>
+
+             <div class="text-center group" data-aos="fade-up" data-aos-delay="400">
+                <div class="rounded-3xl shadow-xl h-72 bg-white flex items-center justify-center text-primary font-bold uppercase tracking-widest border border-slate-100 mb-6 animate-float-left overflow-hidden" style="animation-delay: 4s;">
+                   <div class="w-full h-full flex items-center justify-center bg-red-50">Kitchen Area</div>
+                </div>
+                <h4 class="gallery-label-box text-center">Kitchen Area</h4>
+             </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer (Mobile Optimized) -->
+      <footer class="footer">
+        <div class="container-full">
+          <div class="footer-grid">
+            <div class="footer-info">
+              <div class="logo white mb-4 text-white font-extrabold text-2xl"><span class="logo-accent text-primary">Talent</span> Coaching</div>
+            </div>
+            <div class="footer-links">
+               <h4 class="text-white mb-6">Explore</h4>
+               <ul class="flex flex-col gap-4 text-gray-400">
+                  <li><a href="about.html">About Us</a></li>
+                  <li><a href="results.html">Results</a></li>
+                  <li><a href="gallery.html">Gallery</a></li>
+                  <li><a href="fees.html">Fees</a></li>
+               </ul>
+            </div>
+          </div>
+          <div class="footer-bottom mt-12 pt-8 border-t border-white/10 text-center text-gray-500">
+            <p>&copy; 2024 Talent Coaching. All Rights Reserved.</p>
+          </div>
+        </div>
+      </footer>
+
+      <!-- Floating Buttons -->
+      <div class="floating-actions">
+        <a href="tel:+918709313498" class="action-btn-float btn-call-float" aria-label="Call Us">
+          <i data-lucide="phone" class="w-8 h-8"></i>
+        </a>
+        <a href="https://wa.me/918709313498" class="action-btn-float btn-whatsapp-float" target="_blank" aria-label="Chat on WhatsApp">
+          <i data-lucide="message-circle" class="w-8 h-8"></i>
+        </a>
+      </div>
+    </div>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>

@@ -943,33 +943,113 @@ td { padding: 20px; border-bottom: 1px solid #f1f5f9; background: white; }
 }
 
 @media (max-width: 768px) {
+  /* Header Section Adjustment */
+  .logo { font-size: 1.5rem !important; }
+  #mobile-menu-toggle { display: block; z-index: 3000; padding: 10px; background: #f8fafc; border-radius: 10px; }
+
   /* Hero Refinement */
   .hero {
     height: auto;
-    min-height: 100vh;
-    padding: 140px 0 80px;
+    min-height: 85vh;
+    padding: 160px 0 60px;
+    background-size: 100% auto;
+    background-position: center 15%;
     background-attachment: scroll;
     text-align: center;
   }
-  .hero-content-bottom-left { margin: 0 auto; width: 100%; }
+  .hero-overlay { background: linear-gradient(to top, rgba(0,0,0,0.9), rgba(0,0,0,0.4)); }
+  .hero-content-bottom-left { margin: 0 auto; width: 100%; transform: translateY(20px); }
   .hero-title-main {
-    font-size: 3.5rem;
-    line-height: 1;
-    margin-bottom: 25px;
-    letter-spacing: -2px;
+    font-size: 2.8rem !important;
+    line-height: 1.1;
+    margin-bottom: 20px;
+    letter-spacing: -1px;
   }
-  .hero-location-line { font-size: 1.4rem; margin-bottom: 15px; }
-  .hero-tagline-main { font-size: 1.25rem; margin-bottom: 45px; opacity: 0.9; }
-  .hero-btns-left { 
-    flex-direction: column; 
-    align-items: center; 
-    gap: 20px; 
-    max-width: 320px; 
-    margin: 0 auto; 
-  }
-  .btn { width: 100%; padding: 20px 30px; font-size: 1.15rem; border-radius: 15px; }
+  .hero-location-line { font-size: 1.2rem; margin-bottom: 12px; }
+  .hero-tagline-main { font-size: 1.1rem; margin-bottom: 30px; opacity: 0.9; }
+  .hero-btns-left { display: none !important; } /* Removing buttons as requested */
 
-  /* Navigation */
+  /* Exams & Facilities Slider - SINGLE LINE CAROUSEL */
+  .cards-grid-full { 
+    display: flex !important;
+    overflow-x: auto !important;
+    scroll-snap-type: x mandatory !important;
+    gap: 15px !important;
+    padding: 10px 24px 30px !important;
+    margin: 0 -24px !important;
+    scrollbar-width: none; /* Hide scrollbar Firefox */
+    -ms-overflow-style: none; /* Hide scrollbar IE/Edge */
+  }
+  .cards-grid-full::-webkit-scrollbar { display: none; } /* Hide scrollbar Chrome/Safari */
+
+  .cards-grid-full .card {
+    flex: 0 0 85% !important;
+    min-width: 280px !important;
+    scroll-snap-align: center !important;
+    padding: 25px !important;
+    margin-bottom: 0 !important;
+  }
+  .cards-grid-full .card h3 { font-size: 1.6rem !important; }
+  .cards-grid-full .card p { font-size: 1rem !important; }
+  .cards-grid-full .card .h-64, .cards-grid-full .card .h-72 { height: 180px !important; }
+
+  .section-title { font-size: 1.8rem !important; margin-bottom: 15px !important; white-space: nowrap !important; }
+  .section-title::after { width: 40px; height: 3px; bottom: -6px; }
+  .section-header.align-center h2 { white-space: nowrap !important; line-height: 1.2; }
+
+  /* Who Can Join Section */
+  #join .btn-primary { 
+    font-size: 1rem !important; 
+    padding: 12px 24px !important; 
+    width: auto !important; 
+    margin: 0 auto !important; 
+    display: inline-flex !important;
+  }
+  #join .dual-image-container { margin-top: 30px !important; gap: 15px !important; }
+  #join .dual-image-box { height: 260px !important; }
+
+  /* About Page Refinements */
+  .principal-container { width: 100% !important; margin-top: 30px !important; }
+  .principal-img-box { width: 220px !important; height: 300px !important; margin: 0 auto !important; }
+  .principal-label { font-size: 1.3rem !important; margin-top: 12px !important; letter-spacing: 2px !important; }
+  
+  /* Legacy title reduction - Aiming for single line or very compact */
+  .section h2.text-5xl, .about-legacy-title { 
+    font-size: 1.4rem !important; 
+    text-align: center !important; 
+    margin-bottom: 20px !important; 
+    white-space: nowrap !important;
+    letter-spacing: -0.5px !important;
+  }
+  
+  /* Why Choose title - Minimal reduction */
+  #why-choose-section .section-title { font-size: 1.6rem !important; }
+  .feature-tag { font-size: 0.95rem !important; padding: 10px 18px !important; }
+  .feature-tag i { width: 18px !important; height: 18px !important; }
+
+  /* Results Page Refinements */
+  .results-summary-grid { grid-template-columns: repeat(2, 1fr) !important; gap: 12px !important; }
+  .summary-card { padding: 12px !important; border-radius: 12px !important; border-bottom-width: 3px !important; }
+  .summary-number { font-size: 1.6rem !important; }
+  .summary-label { font-size: 0.75rem !important; letter-spacing: 0.5px !important; }
+
+  .result-institute-card { padding: 20px !important; border-radius: 20px !important; margin-bottom: 25px !important; }
+  .result-institute-card h2 { font-size: 1.6rem !important; margin-bottom: 12px !important; white-space: nowrap !important; }
+  .result-image-small { height: 180px !important; border-radius: 15px !important; margin-bottom: 20px !important; }
+  .result-card-layout { gap: 8px !important; }
+  
+  .table-container { margin-top: 12px !important; border-radius: 12px !important; }
+  th, td { padding: 10px 8px !important; font-size: 0.8rem !important; }
+  th.p-8, td.p-8 { padding: 10px 8px !important; }
+
+  /* Fees Page Refinements */
+  .fee-card { padding: 20px !important; border-radius: 20px !important; }
+  .fee-card h2 { font-size: 1.5rem !important; margin-bottom: 15px !important; white-space: nowrap !important; }
+  .fee-table th, .fee-table td { padding: 10px 6px !important; font-size: 0.85rem !important; }
+  .fee-table td.text-2xl, .fee-table td.text-3xl { font-size: 1.1rem !important; }
+  
+  /* Contact / General */
+  .section { padding: 50px 0 !important; }
   .nav-links {
     display: none;
     position: fixed;
@@ -981,51 +1061,26 @@ td { padding: 20px; border-bottom: 1px solid #f1f5f9; background: white; }
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 35px;
+    gap: 30px;
     z-index: 2000;
   }
   .nav-links.active { display: flex; }
-  .nav-links a { font-size: 1.6rem; }
-  #mobile-menu-toggle { display: block; z-index: 3000; padding: 12px; background: #f8fafc; border-radius: 12px; }
-
-  /* Section Polishing */
-  .grid-2 { grid-template-columns: 1fr; gap: 30px; }
-  .principal-container { width: 100%; margin-top: 50px; }
-  .principal-img-box { width: 100%; max-width: 300px; height: 380px; }
-  .principal-label { font-size: 1.8rem; }
-
-  .result-card-layout { flex-direction: column; align-items: center; text-align: center; gap: 30px; }
-  .result-image-small { width: 100%; max-width: 100%; height: 250px; border-radius: 20px; }
-  .result-image-small img { height: 100%; }
+  .nav-links a { font-size: 1.4rem; }
   
-  .table-container { margin: 30px -24px; padding: 0 24px; width: calc(100% + 48px); }
-  
-  .footer-grid { grid-template-columns: 1fr; text-align: center; gap: 50px; }
-  .footer-info p { margin-left: auto; margin-right: auto; }
-  
-  .floating-actions { right: 25px; bottom: 25px; gap: 15px; }
-  .action-btn-float { width: 62px; height: 62px; }
+  .footer-grid { grid-template-columns: 1fr; text-align: center; gap: 30px; margin-bottom: 30px !important; }
+  .footer-info p { font-size: 0.95rem !important; }
+  .footer { padding-top: 50px !important; }
 
-  /* Why Choose Single Box on Mobile */
-  .feature-list-single { flex-direction: column; align-items: center; gap: 15px; }
-  .feature-tag { width: 100%; justify-content: center; padding: 18px; font-size: 1.1rem; }
-
-  /* Dual Image Stack */
-  .dual-image-container { flex-direction: column; align-items: center; }
-  .dual-image-box { max-width: 100%; height: 400px; width: 100%; }
-
-  /* Grid Resp utility */
-  .grid-cols-2 { grid-template-columns: 1fr; }
-  .gap-20, .gap-16, .gap-10 { gap: 30px; }
+  .floating-actions { right: 15px; bottom: 15px; gap: 10px; }
+  .action-btn-float { width: 50px; height: 50px; }
+  .action-btn-float i { width: 24px; height: 24px; }
 }
 
 @media (max-width: 480px) {
-  .hero-title-main { font-size: 3rem; }
-  .section-title { font-size: 2.2rem; }
-  .section-subtitle { font-size: 1.1rem; }
-  .hero-btns-left { max-width: 100%; }
-  .container-full { padding: 0 20px; }
-  .gap-4, .gap-8 { gap: 15px; }
+  .hero-title-main { font-size: 2.2rem !important; }
+  .section-title { font-size: 1.5rem !important; }
+  .container-full { padding: 0 15px; }
+  .about-legacy-title { font-size: 1.25rem !important; }
 }
 
 body.menu-open { overflow: hidden; }

@@ -1003,7 +1003,7 @@ td { padding: 20px; border-bottom: 1px solid #f1f5f9; background: white; }
   .section-title::after { width: 40px; height: 3px; bottom: -6px; }
   .section-header.align-center h2 { white-space: nowrap !important; line-height: 1.2; }
 
-  /* Who Can Join Section - SQUARE ALTERNATING LAYOUT */
+  /* Who Can Join Section - VERTICAL SQUARE STACK */
   #join .btn-primary { 
     font-size: 1rem !important; 
     padding: 12px 24px !important; 
@@ -1013,21 +1013,23 @@ td { padding: 20px; border-bottom: 1px solid #f1f5f9; background: white; }
   }
   #join .dual-image-container { 
     display: flex !important;
-    flex-direction: row !important;
+    flex-direction: column !important;
     justify-content: center !important;
-    gap: 20px !important;
+    gap: 40px !important;
     margin-top: 40px !important;
     align-items: center !important;
     padding-bottom: 20px !important;
   }
   #join .dual-image-box { 
-    width: 140px !important; 
-    height: 140px !important; 
-    border-radius: 20px !important;
+    width: 280px !important; 
+    height: 280px !important; 
+    border-radius: 30px !important;
     flex: none !important;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.1) !important;
   }
-  #join .dual-image-box:first-child { transform: translateY(-15px); }
-  #join .dual-image-box:last-child { transform: translateY(15px); }
+  /* Subtle staggered effect if desired, but "top and bottom" was primary instruction */
+  #join .dual-image-box:first-child { transform: translateX(-10px); }
+  #join .dual-image-box:last-child { transform: translateX(10px); }
 
   /* About Page Refinements */
   .principal-container { width: 100% !important; margin-top: 30px !important; }
@@ -1053,6 +1055,17 @@ td { padding: 20px; border-bottom: 1px solid #f1f5f9; background: white; }
   }
   .feature-tag { font-size: 0.95rem !important; padding: 10px 18px !important; }
   .feature-tag i { width: 18px !important; height: 18px !important; }
+
+  /* Mobile-only contact section layout */
+  #contact .grid-2 { 
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 40px !important;
+  }
+  #contact .card, #contact .inquiry-form-card {
+    padding: 30px 20px !important;
+    border-radius: 25px !important;
+  }
 
   /* Mobile-only Result Summary Styles */
   .mobile-result-summary {

@@ -1324,8 +1324,8 @@ td {
   }
 
   #join .dual-image-box {
-    width: 150px !important;
-    height: 150px !important;
+    width: 130px !important;
+    height: 130px !important;
     border-radius: 20px !important;
     flex: none !important;
     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1) !important;
